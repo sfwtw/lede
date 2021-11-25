@@ -53,7 +53,7 @@ jobs:
           git pull openwrt master
           git remote -v
           
-                - name: 涡轮增雕进程
+      - name: 涡轮增雕进程
         run: |
           cd package
           mkdir openwrt-packages
