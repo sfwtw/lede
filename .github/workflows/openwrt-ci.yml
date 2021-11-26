@@ -51,8 +51,10 @@ jobs:
       - name: 涡轮增雕进程
         run: |
           cd package
+          
           mkdir openwrt-packages
           cd openwrt-packages
+          git clone https://github.com/kenzok8/openwrt-packages.git
           git clone https://github.com/jerrykuku/luci-theme-argon.git
           
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
